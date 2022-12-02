@@ -2,13 +2,13 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи</title>
+    <title>Форма для отправки в интернет-магазине Кэт энерджи</title>
   </head>
   <body class="page__body">
     <header class="main-header">
       <a class="main-header__logo" href="index.html">
-        <img class="main-header__logo-image" src="../images/logo-mobile.svg" width="34" height="38" alt="Логотип Кэт энерджи">
-        <img class="main-header__logo-description" src="../images/logo-title.svg" width="101" height="18" alt="Кэт энерджи - название интернет-магазина">
+        <img class="main-header__logo--image" src="../images/logo-mobile.svg" width="34" height="38" alt="Логотип Кэт энерджи">
+        <img class="main-header__logo--title" src="../images/logo-title.svg" width="101" height="18" alt="Кэт энерджи - название интернет-магазина">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -16,8 +16,8 @@
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a>
+            <li class="site-list__item">
+              <a href="index.html">
                 Главная
               </a>
             </li>
@@ -26,8 +26,8 @@
                 Каталог продукции
               </a>
             </li>
-            <li class="site-list__item">
-              <a href="form.html">
+            <li class="site-list__item site-list__item--active">
+              <a>
                 Подбор программы
               </a>
             </li>
@@ -36,159 +36,187 @@
       </nav>
     </header>
 
-    <main class="main-container">
-      <h1 class="visually hidden">Интернет-магазин Кэт энерджи, функциональное питание для котов.</h1>
-      <section class="promo">
-        <div class="promo__wrapper">
-          <header class="promo__header">
-            <h2 class="visually hidden">
-              Подбор программы питания.
-            </h2>
-            <img
-            class="promo__background--cat"
-            src="../images/index-background-cat.jpg"
-            alt="Облизывающийся кот."
-            width="320"
-            height="302">
-            <p class="promo__slogan">
-              Функциональное <br> питание для котов
+    <main class="main-form">
+      <div class="form-wrapper">
+        <header class="form-header">
+          <h1 class="form-header__title">Подбор программы</h1>
+          <p class="form-header__description">Заполните анкету, и мы подберем <br> программу питания для вашего кота</p>
+        </header>
+        <section class="selection-form">
+          <form
+            class="selection-form__auth--form"
+            action="https://echo.htmlacademy.ru/"
+            method="post">
+            <p class="selection-form__field--group">
+              <label class="selection-form__title">ИМЯ:*</label>
+              <input
+                class="auth--form__field field"
+                type="text"
+                id="cat-name"
+                name="cat-name"
+                placeholder="барсик">
             </p>
-            <p class="promo__intro">
-              Занялся собой? Займись котом!
+            <p class="selection-form__field--group">
+              <label class="selection-form__title">Вес (кг):*</label>
+              <input
+                class="auth--form__field field"
+                type="text"
+                id="cat-weight"
+                name="cat-weight"
+                placeholder="7">
             </p>
-            <img
-            class="promo__image"
-            src="../images/index-can-mobile.png"
-            alt="Питание CAT PRO ENERGY с курицей 500 грамм."
-            width="280"
-            height="270">
-            <button class="promo__button" type="button">Подобрать программу</button>
-          </header>
-        </div>
-      </section>
-      <section class="catalog-slim">
-        <div class="catalog-slim__container">
-          <h2 class="catalog-slim__title">
-            Похудение
-          </h2>
-          <p class="catalog-slim__description">
-            Ваш кот весит больше собаки и <br>
-            почти утратил способность лазить <br>
-            по деревьям? Пора на диету! Cat <br>
-            Energy Slim поможет вашему <br>
-            питомцу сбросить лишний вес.
-          </p>
-          <a class="catalog-slim__link" href="#">
-            каталог slim
-          </a>
-        </div>
-      </section>
-      <section class="catalog-pro">
-        <div class="catalog-pro__container">
-          <h2 class="catalog-pro__title">
-            Набор массы
-          </h2>
-          <p class="catalog-pro__description">
-            Заработать авторитет среди <br>
-            дворовых котов и даже собак? <br>
-            Серия Cat Energy Pro поможет <br>
-            вашему коту нарастить <br>
-            необходимые мышцы!
-          </p>
-          <a class="catalog-pro__link" href="#">
-            каталог pro
-          </a>
-        </div>
-      </section>
-      <section class="block-special">
-        <div class="block-special__container">
-          <h2 class="block-special__title">
-            Как это работает
-          </h2>
-          <ul class="block-special__list">
-            <li class="block-special__item">
-              Функциональное питание <br>
-              содержит только полезные <br>
-              питательные вещества.
-            </li>
-          </ul>
-          <ul class="block-special__list">
-            <li class="block-special__item">
-              Выпускается в виде порошка, <br>
-              который нужно лишь залить <br>
-              кипятком и готово.
-            </li>
-          </ul>
-          <ul class="block-special__list">
-            <li class="block-special__item">
-              Замените один-два приема <br>
-              обычной еды на наше <br>
-              функциональное питание.
-            </li>
-          </ul>
-          <ul class="block-special__list">
-            <li class="block-special__item">
-              Уже через месяц <br>
-              наслаждайтесь изменениями <br>
-              к лучшему вашего питомца!
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="example">
-        <div class="example__wrapper">
-          <h2 class="example__title">
-            Живой пример
-          </h2>
-          <p class="example__description">
-            Борис сбросил 5 кг за 2 месяца, просто <br>
-            заменив свой обычный корм на Cat Energy <br>
-            Slim. Отличный результат без изнуряющих <br>
-            тренировок! При этом он не менял своих <br>
-            привычек и по-прежнему спит по 16 часов <br>
-            в день.
-          </p>
-        </div>
-        <dl class="example__list">
-          <div class="example__item">
-            <dt class="example__text">
-              снижение веса
-            </dt>
-            <dd class="example__number">
-              5 КГ
-            </dd>
-          </div>
-          <div class="example__item">
-            <dt class="example__text">
-              затрачено времени
-            </dt>
-            <dd class="example__number">
-              60 ДНЕЙ
-            </dd>
-          </div>
-        </dl>
-        <p class="example__expenses">
-          Затраты на питание: 15 000 РУБ.
-        </p>
-        <div class="example__cat--slider">
-          <a class="cat-slider__before" href="#">
-            <img
-            class="cat-slider__before--image"
-            src="../images/cat-before.png"
-            alt="Каким кот был до приёма корма Cat Energy Slim."
-            width="280"
-            height="256">
-          </a>
-          <a class="cat-slider__after" href="#">
-            <img
-            class="cat-slider__after--image"
-            src="../images/cat-slider-after.png"
-            alt="Каким кот стал после приёма корма Cat Energy Slim."
-            width="280"
-            height="256">
-          </a>
-        </div>
-      </section>
+            <p class="selection-form__field--group">
+              <label class="selection-form__title">Возраст (лет):</label>
+              <input
+                class="auth--form__field field"
+                type="text"
+                id="cat-age"
+                name="cat-age"
+                placeholder="7">
+            </p>
+          </form>
+          <form
+            class="selection-form__filter"
+            action="https://echo.htmlacademy.ru/"
+            method="get">
+            <h2 class="visually-hidden">Цель питания.</h2>
+            <ul class="selection-form__list">
+              <li class="selection-form__item">
+                <label class="control">
+                  <input
+                    class="control-input visually-hidden"
+                    type="radio"
+                    name="type of changes"
+                    value="weight loss"
+                    checked>
+                  <span class="control-marker"></span>
+                  <span class="control-label">похудение</span>
+                </label>
+              </li>
+
+              <li class="selection-form__item">
+                <label class="control">
+                  <input
+                    class="control-input visually-hidden"
+                    type="radio"
+                    name="type of changes"
+                    value="weight gain">
+                  <span class="control-marker"></span>
+                  <span class="control-label">Набор массы</span>
+                </label>
+              </li>
+
+              <li class="selection-form__item">
+                <label class="control">
+                  <input
+                    class="control-input visually-hidden"
+                    type="radio"
+                    name="type of changes"
+                    value="is unknown">
+                  <span class="control-marker"></span>
+                  <span class="control-label">Не знаю (Нужен ваш совет)</span>
+                </label>
+              </li>
+            </ul>
+          </form>
+        </section>
+
+        <section class="contacts">
+          <h2 class="contacts-title">
+            Контактные данные <br>
+            (владельца кота)</h2>
+          <form
+            class="contacts-form"
+            action="https://echo.htmlacademy.ru/"
+            method="post">
+            <p class="contacts-form__field--group">
+              <label class="contacts-form__title">E-mail:*</label>
+              <input
+                class="auth--form__contact--field field"
+                type="text"
+                id="e-mail"
+                name="e-mail"
+                placeholder="kuklachev@gmail.com">
+              <span class="letter-marker"></span>
+            </p>
+            <p class="contacts-form__field--group">
+              <label class="contacts-form__title">Телефон:*</label>
+              <input
+                class="auth--form__contact--field field"
+                type="text"
+                id="phone"
+                name="phone"
+                placeholder="8 (960) 900-60-90">
+              <span class="phone-marker"></span>
+            </p>
+          </form>
+        </section>
+
+        <section class="comments">
+          <h2 class="comments__title">Комментарий</h2>
+          <form
+            class="comments__form"
+            action="https://echo.htmlacademy.ru/"
+            method="post">
+            <textarea rows="10" cols="45" name="text" id="text">Расскажите обо всех повадках кота</textarea>
+          </form>
+        </section>
+
+        <section class="additionally">
+          <h2 class="additionally__title">Дополнительно</h2>
+          <form
+            class="additionally__form"
+            action="https://echo.htmlacademy.ru/"
+            method="get">
+            <ul class="additionally__list">
+              <li class="additionally__item">
+                <label class="additionally__control">
+                  <input
+                    class="additionally__control--input visually-hidden"
+                    type="checkbox"
+                    name="sweetener"
+                    checked>
+                  <span class="additionally__control--marker"></span>
+                  <span class="additionally__control--label">сахарозаменитель</span>
+                </label>
+              </li>
+              <li class="additionally__item">
+                <label class="additionally__control">
+                  <input
+                    class="additionally__control--input visually-hidden"
+                    type="checkbox"
+                    name="water">
+                  <span class="additionally__control--marker"></span>
+                  <span class="additionally__control--label">питьевая вода</span>
+                </label>
+              </li>
+              <li class="additionally__item">
+                <label class="additionally__control">
+                  <input
+                    class="additionally__control--input visually-hidden"
+                    type="checkbox"
+                    name="milk">
+                  <span class="additionally__control--marker"></span>
+                  <span class="additionally__control--label">молоко</span>
+                </label>
+              </li>
+              <li class="additionally__item">
+                <label class="additionally__control">
+                  <input
+                    class="additionally__control--input visually-hidden"
+                    type="checkbox"
+                    name="vitamins">
+                  <span class="additionally__control--marker"></span>
+                  <span class="additionally__control--label">витамины</span>
+                </label>
+              </li>
+            </ul>
+          </form>
+        </section>
+
+        <button class="submit-button button" type="button">отправить заявку</button>
+        <span class="submit-button__comment">* — Обязательные поля</span>
+      </div>
     </main>
 
     <footer class="page-footer">
